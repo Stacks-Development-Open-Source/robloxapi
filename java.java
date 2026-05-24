@@ -7,7 +7,7 @@ import java.util.Base64;
 public class java {
 
     public static void main(String[] args) {
-        print("oi")
+        System.out.println("oi");
             
         try {
 
