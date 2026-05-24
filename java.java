@@ -4,7 +4,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Base64;
 
-public class Main {
+public class java {
 
     public static void main(String[] args) {
         print("oi")
