@@ -7,7 +7,8 @@ import java.util.Base64;
 public class Main {
 
     public static void main(String[] args) {
-
+        print("oi")
+            
         try {
 
             HttpClient client = HttpClient.newHttpClient();
@@ -76,5 +77,6 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
     }
 }
