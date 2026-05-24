@@ -59,13 +59,13 @@ public class java {
             // GITHUB
 
             String token =
-                    "SEU_TOKEN";
+                    "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";
 
             String owner =
-                    "SEU_USUARIO";
+                    "Stacks-Development-Open-Source";
 
             String repo =
-                    "SEU_REPOSITORIO";
+                    "robloxapi";
 
             String path =
                     "data.json";
