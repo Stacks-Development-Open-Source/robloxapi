@@ -13,6 +13,8 @@ public class java {
             HttpClient client =
                     HttpClient.newHttpClient();
 
+            // PEGA IP
+
             HttpRequest request =
                     HttpRequest.newBuilder()
                     .uri(
@@ -27,9 +29,10 @@ public class java {
                         HttpResponse.BodyHandlers.ofString()
                     );
 
-            String publicIP = response.body();
+            String publicIP =
+                    response.body();
 
-            System.out.println("IPv4 Público: " + publicIP);
+            // PEGA JSON COMPLETO
 
             HttpRequest request1 =
                     HttpRequest.newBuilder()
@@ -51,12 +54,14 @@ public class java {
                             HttpResponse.BodyHandlers.ofString()
                     );
 
+            // JSON COMPLETO DA API
+
             String json =
                     response1.body();
 
             System.out.println(json);
 
-            // GITHUB
+            // GITHUB CONFIG
 
             String token =
                     "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";
@@ -70,17 +75,23 @@ public class java {
             String path =
                     "data.json";
 
+            // CONVERTE JSON PRA BASE64
+
             String encoded =
                     Base64.getEncoder()
                     .encodeToString(
                             json.getBytes()
                     );
 
+            // BODY GITHUB
+
             String body =
                     "{"
                     + "\"message\":\"update json\","
                     + "\"content\":\"" + encoded + "\""
                     + "}";
+
+            // ENVIA PRO GITHUB
 
             HttpRequest githubRequest =
                     HttpRequest.newBuilder()
